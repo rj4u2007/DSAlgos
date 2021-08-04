@@ -13,10 +13,14 @@ public class KnapsackMemoization {
 		
 		// Memoization - **** n+1 and W+1
 		int[][] t = new int[n+1][W+1];
-		for(int i=0; i< t.length; i++) {
-			for(int j =0; j< t[0].length; j++) {
-				t[i][j] = -1;
-			}
+		//Arrays.fill(t,new Integer(-1));
+//		for(int i=0; i< t.length; i++) {
+//			for(int j =0; j< t[0].length; j++) {
+//				t[i][j] = -1;
+//			}
+//		}
+		for(int[] row:t) {
+			Arrays.fill(row, -1 );
 		}
 		
 				
